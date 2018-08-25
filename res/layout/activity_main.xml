@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:background="@drawable/top">
+        <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:textSize="30sp"
+        	android:textColor="@color/white"
+        	android:text="弗来明健康睡眠系统"/>
+        <Button 
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:textSize="15sp"
+        	android:textColor="@color/white"
+        	android:text="设置"/>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/patientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0ffff"
+        android:orientation="horizontal">
+        <Button  
+	    	android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:text="上传数据"/>
+        <Button  
+	    	android:id="@+id/downloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:text="下载医嘱"/>
+        <Button  
+	    	android:id="@+id/chakanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:text="查看医嘱"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+            <Button 
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="20sp"
+            android:text="一般信息"/>
+        <Button 
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="20sp"
+            android:text="睡眠治疗评估"/>
+        <Button 
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="20sp"
+            android:text="失眠程度评估"/>
+        <Button 
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="20sp"
+            android:text="心理评估一"/>
+        <Button 
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="20sp"
+            android:text="心理评估二"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+            <Button 
+        			android:id="@+id/button6"
+        			android:layout_width="match_parent"
+        			android:layout_height="match_parent"
+        			android:textSize="30sp"
+        			android:text="睡眠日记"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+        				android:textColor="@color/black"
+                        android:text="联系医生:"/>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+<!--                         <Button  -->
+<!--         					android:id="@+id/button7" -->
+<!--         					android:layout_width="0dp" -->
+<!--         					android:layout_weight="1" -->
+<!--         					android:layout_height="match_parent" -->
+<!--         					android:textSize="30sp" -->
+<!--         					android:textColor="@color/white" -->
+<!--         					android:background="@drawable/connection"/> -->
+						<cn.edu.cqu.project_test_activity.ImageButton_define
+        					android:id="@+id/button7"
+        					android:layout_width="0dp"
+        					android:layout_weight="1"
+        					android:layout_height="match_parent" 
+        					android:background="#ffffff"
+        					android:src="@drawable/connection"   
+        					>
+    					</cn.edu.cqu.project_test_activity.ImageButton_define>
+    					<cn.edu.cqu.project_test_activity.ImageButton_define
+        					android:id="@+id/Weixinbutton"
+        					android:layout_width="0dp"
+        					android:layout_weight="1"
+        					android:layout_height="match_parent" 
+        					android:background="#ffffff"
+        					android:src="@drawable/weixin"   
+        					>
+    					</cn.edu.cqu.project_test_activity.ImageButton_define>
+<!--                         <Button  -->
+<!--         					android:id="@+id/Weixinbutton" -->
+<!--         					android:layout_width="0dp" -->
+<!--         					android:layout_weight="1" -->
+<!--         					android:layout_height="match_parent" -->
+<!--         					android:textSize="30sp" -->
+<!--         					android:background="#ffffff" -->
+<!--         					android:textColor="@color/white" -->
+<!--         					android:text="打开微信"/> -->
+                    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+        				android:textColor="@color/black"
+                        android:text="多媒体交互:"/>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+<!--                         <Button  -->
+<!--         					android:id="@+id/voicebutton" -->
+<!--         					android:layout_width="0dp" -->
+<!--         					android:layout_weight="1" -->
+<!--         					android:layout_height="match_parent" -->
+<!--         					android:textSize="30sp" -->
+<!--         					android:textColor="@color/white" -->
+<!--         					android:background="@drawable/mp3"/> -->
+						<cn.edu.cqu.project_test_activity.ImageButton_define
+        					android:id="@+id/voicebutton"
+        					android:layout_width="0dp"
+        					android:layout_weight="1"
+        					android:background="#ffffff"
+        					android:layout_height="match_parent" 
+        					android:src="@drawable/mp3"   
+        					>
+    					</cn.edu.cqu.project_test_activity.ImageButton_define>
+<!--                         <Button  -->
+<!--         					android:id="@+id/vediobutton" -->
+<!--         					android:layout_width="0dp" -->
+<!--         					android:layout_weight="1" -->
+<!--         					android:layout_height="match_parent" -->
+<!--         					android:textSize="30sp" -->
+<!--         					android:textColor="@color/white" -->
+<!--         					android:background="@drawable/mv"/> -->
+						<cn.edu.cqu.project_test_activity.ImageButton_define
+        					android:id="@+id/vediobutton"
+        					android:layout_width="0dp"
+        					android:layout_weight="1"
+        					android:background="#ffffff"
+        					android:layout_height="match_parent" 
+        					android:src="@drawable/mv"   
+        					>
+    					</cn.edu.cqu.project_test_activity.ImageButton_define>
+                    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.28"
+            android:background="#ffffff"
+            android:orientation="vertical">
+<!--             <Button  -->
+<!--         		android:id="@+id/button8" -->
+<!--         		android:layout_width="match_parent" -->
+<!--         		android:layout_height="match_parent" -->
+<!--         		android:textSize="30sp" -->
+<!--         		android:textColor="@color/mediumslateblue" -->
+<!--         		android:background="@drawable/liaoxiao"/> -->
+				<cn.edu.cqu.project_test_activity.ImageButton_define
+        					android:id="@+id/button8"
+        					android:layout_width="match_parent"
+        					android:layout_height="match_parent" 
+        					android:background="#ffffff"
+        					android:src="@drawable/liaoxiao"   
+        					>
+    					</cn.edu.cqu.project_test_activity.ImageButton_define>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

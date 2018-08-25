@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="40sp"
+        android:text="医嘱"/>
+	<TableLayout 
+   				   android:layout_width="match_parent"
+       				android:layout_height="wrap_content"
+       				android:layout_weight="1" 
+       				android:background="@android:drawable/editbox_background"
+       				android:stretchColumns="*"
+       				android:shrinkColumns="*">
+   				    <TableRow 
+   				         android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="您上周："/>
+   				    </TableRow>
+   				  <!--   <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" /> -->
+   				    <TableRow 
+   				        android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="入睡潜伏期："/>
+   				        
+   				        <TextView 
+   				            android:id="@+id/sleep_latency"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="分钟    较前："/>
+   				        <TextView 
+   				            android:id="@+id/sleep_latency_state"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            />
+   				    </TableRow>
+   				    <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" />
+   				    <TableRow 
+   				         android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="总睡眠时间："/>
+   				        <TextView 
+   				            android:id="@+id/sleep_time"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="分钟    较前："/>
+   				        <TextView 
+   				            android:id="@+id/sleep_time_state"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"/>
+   				    </TableRow>
+   				    <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" />
+   				    <TableRow  android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="睡眠效率："/>
+   				        <TextView 
+   				            android:id="@+id/sleep_efficient"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="%   较前："/>
+   				        <TextView 
+   				            android:id="@+id/sleep_efficient_state"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"/>
+   				    </TableRow>
+   				    <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" />
+   				    <TableRow  android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="白天小睡："/>
+   				        <TextView 
+   				            android:id="@+id/today_sleep"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="分钟    较前："/>
+   				        <TextView 
+   				            android:id="@+id/today_sleep_state"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"/>
+   				    </TableRow>
+   				    <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" />
+   				    <TableRow 
+   				         android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="您本周："/>
+   				    </TableRow>
+   				  <!--   <View
+        			android:layout_width="240dip"
+        			android:layout_height="2.0dip"
+        			android:background="@drawable/ic_shelf_category_divider" /> -->
+   				    <TableRow 
+   				        android:layout_weight="1">
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="上床时间："/>
+   				        <TextView 
+   				            android:id="@+id/thisweek_sleep_latency"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="分 "/>
+   				        <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="起床时间："/>
+   				        <TextView 
+   				            android:id="@+id/thisweek_sleep_time"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="分 "/>
+   				    </TableRow>
+   				</TableLayout>
+   				<LinearLayout 
+   				    android:layout_width="match_parent"
+   				    android:layout_height="wrap_content"
+   				    android:orientation="horizontal">
+   				     <TextView 
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:textSize="18sp"
+   				            android:text="其他："/>
+   				        <TextView 
+   				            android:id="@+id/add_doctor_advice"
+   				            android:layout_width="wrap_content"
+   				            android:layout_height="wrap_content"
+   				            android:layout_weight="1"/>
+   				</LinearLayout>
+</LinearLayout>
